@@ -25,16 +25,4 @@ export class AuFaInputComponent implements AfterContentInit {
         return this.input ? this.input.focus : false;
     }
 
-
-    get classes() {
-
-        const cssClasses = {};
-
-        if (this.icon) {
-            cssClasses['fa-' + this.icon] = true;
-        }
-
-        return cssClasses;
-    }
-
 }

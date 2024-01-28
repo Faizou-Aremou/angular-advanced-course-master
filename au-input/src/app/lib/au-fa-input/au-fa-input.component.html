@@ -1,6 +1,10 @@
-
-<i class="icon fa" [ngClass]="classes"></i>
-
-
-<ng-content></ng-content>
-
+<mat-form-field>
+  <mat-label><ng-content></ng-content></mat-label>
+  <i [class]="'icon fa' + 'fa-' + icon"></i>
+  <input
+    class="au-fa-input__input"
+    [type]="type"
+    [name]="email"
+    [placeholder]="placeholder"
+  />
+</mat-form-field>
